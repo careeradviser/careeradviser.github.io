@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-PQ4NFXG");
+    </script>
+    <!-- End Google Tag Manager -->
+    <!-- v0.1 - deploy test 2 -->
+    <!-- Hotjar Tracking Code for my site -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 3359429, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="/assets/favicon-cf3cd1f1.png"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    
+    <script type="module" crossorigin src="/assets/index-536ad0a9.js"></script>
+    <link rel="stylesheet" href="/assets/index-2f3456af.css">
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-PQ4NFXG"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- class="absolute -z-10 w-screen h-screen bg-gradient-to-tl from-green-500 to-violet-200" -->
+    <div
+      class="bg-[url('/cropped-940-header.jpg')] w-screen h-screen bg-cover bg-center absolute -z-10 blur"
+    ></div>
+    <div
+      class="w-screen h-screen absolute grid place-items-center invisible"
+      id="loading"
+    >
+      <div class="text-center fancy-text text-4xl">randomJoke</div>
+      <img src="/loading.svg" class="w-96" />
+    </div>
+    <div class="hero h-screen">
+      <div class="hero-content fancy-text p-6">
+        <div>
+          <div class="text-8xl" id="title"></div>
+          <div class="text-xl pt-12 whitespace-pre-line" id="body"></div>
+          <div class="text-lg py-2 invisible grid space-y-2" id="text-entry">
+            <input
+              class="rounded-none caret-white mb-8 text-gray-200 data-hj-allow"
+              placeholder=""
+              type="text"
+              onkeyup="checkAnswer(event)"
+            />
+            <button
+              class="btn btn-outline btn-primary w-20 mx-auto"
+              onclick="questionAnswered(event)"
+              id="submit"
+              disabled
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button id="submitButton">Submit</button>
+    <script></script>
+  </body>
+</html>
